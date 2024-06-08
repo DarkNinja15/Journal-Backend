@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devwizards.journalApp.entity.JournalEntry;
-import com.devwizards.journalApp.service.JournalEntryService;
+import com.devwizards.journalApp.service.JournalService;
 
 import java.util.*;
 
@@ -22,7 +22,7 @@ import java.util.*;
 public class JournalEntryController {
 
     @Autowired
-    private JournalEntryService service;
+    private JournalService service;
 
     @GetMapping
     public ResponseEntity<List<JournalEntry>> getJournals() {

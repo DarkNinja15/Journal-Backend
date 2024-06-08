@@ -10,7 +10,7 @@ import com.devwizards.journalApp.entity.JournalEntry;
 import com.devwizards.journalApp.repo.JournalRepository;
 
 @Component
-public class JournalEntryService {
+public class JournalService {
     @Autowired
     private JournalRepository repo;
 
